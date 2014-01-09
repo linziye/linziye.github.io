@@ -1,0 +1,35 @@
+html {
+    background-color: #fafafa;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+}
+
+
+
+#Title {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 70pt;
+    color: #1f4f6a;
+}
+
+#Subtitle {
+    font-size: 28pt;
+}
+
+#CurrentGallery{
+    width: auto;
+    height:400px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+#Galleries{
+    width: auto;
+    height:152px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
