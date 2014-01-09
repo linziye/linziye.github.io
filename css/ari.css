@@ -8,18 +8,64 @@ body {
     text-align: center;
 }
 
-
-
-#Title {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 70pt;
-    color: #1f4f6a;
+.galleria {
+    background: #f00;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#Subtitle {
-    font-size: 28pt;
+@media all and (min-width:0px) {
+    #Title {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 36pt;
+        color: #1f4f6a;
+    }
+
+    #Subtitle {
+        font-size: 14pt;
+    }
+    .galleria {
+        width: 400px;
+        height: 300px;
+    }
 }
 
+
+@media all and (min-width:600px) {
+    #Title {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 60pt;
+        color: #1f4f6a;
+    }
+
+    #Subtitle {
+        font-size: 22pt;
+    }
+    .galleria {
+        width: 600px;
+        height: 450px;
+    }
+}
+
+
+@media all and (min-width:1200px) {
+    #Title {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 70pt;
+        color: #1f4f6a;
+    }
+
+    #Subtitle {
+        font-size: 26pt;
+    }
+    .galleria {
+        width: 800px;
+        height: 600px;
+    }
+}
+
+
+/*
 #CurrentGallery{
     width: auto;
     height:400px;
@@ -27,10 +73,11 @@ body {
     overflow-y: hidden;
     white-space: nowrap;
 }
+
 #Galleries{
     width: auto;
     height:152px;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-}
+}*/
