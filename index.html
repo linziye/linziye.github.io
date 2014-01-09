@@ -3,70 +3,338 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/ari.css">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Julius+Sans+One">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ari.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Julius+Sans+One">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 
 
 
-        <div id="Title">Ariana Lindquist</div>
-        <div id="Subtitle">Beautiful pictures from any location, every time.</div>
 
 
-        <div id="CurrentGallery">
-            <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
-            <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
-            <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
-            <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
-            <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
-            <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
+    <style type="text/css">
+
+        /* ================================================================
+        This copyright notice must be untouched at all times.
+
+        The original version of this stylesheet and the associated (x)html
+        is available at http://www.cssplay.co.uk/menu/double-click-gallery.html
+        Copyright (c) 2005-2009 Stu Nicholls. All rights reserved.
+        This stylesheet and the associated (x)html may be modified in any
+        way to fit your requirements.
+        =================================================================== */
+        #gallery {
+            width:750px;
+            height:550px;
+            margin:0 auto;
+            position:relative;
+            font-family:verdana, arial, sans-serif;
+        }
+
+        #gallery #slides {position:absolute; left:0; top:0; height:120px; width:750px; overflow:hidden; text-align:center; z-index:500;}
+        #gallery #slides div {width:750px; height:200px; position:relative; padding-top:10px;}
+        #gallery #slides div ul {padding:0; margin:0 auto; list-style:none; width:684px;}
+        #gallery #slides div ul li {float:left; padding:10px 0 5px 5px;}
+        #gallery #slides div ul li a {display:block; width:92px; height:69px; float:left;}
+        #gallery #slides div ul li a b {display:none;}
+        #gallery #slides div ul li a.previous {background:url(double-click/previous.png) no-repeat center center;}
+        #gallery #slides div ul li a.next {background:url(double-click/next.png) no-repeat center center;}
+
+        #gallery #slides div ul li a img {display:block; width:92px; height:69px; border:0;}
+        #gallery #slides div ul li a:focus {outline:0;}
+
+        #gallery #fullsize {position:absolute; left:0; top:0; height:550px; width:750px; overflow:hidden; text-align:center; z-index:200;}
+
+        #gallery #fullsize div {width:750px; height:700px; padding-top:90px; position:relative;}
+        #gallery #fullsize div img {clear:both; display:block; margin:0 auto; border:10px solid #fff; width:480px; height:360px; position:relative;}
+        #gallery #fullsize div h3 {padding:10px 0 0 0; margin:0; font-size:18px;}
+        #gallery #fullsize div p {padding:5px 0; margin:0; font-size:12px; line-height:18px;}
+
+    </style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+
+<div id="Title">Ariana Lindquist</div>
+<div id="Subtitle">Beautiful pictures from any location, every time.</div>
+
+
+<div id="CurrentGallery">
+    <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
+    <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
+    <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
+    <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
+    <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
+    <a href="/"><img src="http://placekitten.com/400/400/" height="400" width="400"/></a>
+</div>
+
+
+
+
+<div id="Galleries">
+    <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
+    <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
+    <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
+    <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
+    <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
+    <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="gallery">
+    <div id="slides">
+        <div id="slide1">
+            <ul>
+                <li><a href="#slide10" class="previous"><b>Previous</b></a></li>
+                <li><a href="#pic1"><img src="double-click/pic1.jpg" alt="Winter branches" /></a></li>
+                <li><a href="#pic2"><img src="double-click/pic2.jpg" alt="Wading birds" /></a></li>
+                <li><a href="#pic3"><img src="double-click/pic3.jpg" alt="Bird on a post" /></a></li>
+                <li><a href="#pic4"><img src="double-click/pic4.jpg" alt="Early bloomers" /></a></li>
+                <li><a href="#pic5"><img src="double-click/pic5.jpg" alt="Green lizard" /></a></li>
+                <li><a href="#slide2" class="next"><b>Next</b></a></li>
+            </ul>
         </div>
-
-
-
-
-        <div id="Galleries">
-            <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
-            <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
-            <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
-            <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
-            <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
-            <a href="/"><img src="http://placekitten.com/150/150/" height="150" width="150"/></a>
+        <div id="slide2">
+            <ul>
+                <li><a href="#slide1" class="previous"><b>Previous</b></a></li>
+                <li><a href="#pic2"><img src="double-click/pic2.jpg" alt="Wading birds" /></a></li>
+                <li><a href="#pic3"><img src="double-click/pic3.jpg" alt="Bird on a post" /></a></li>
+                <li><a href="#pic4"><img src="double-click/pic4.jpg" alt="Early bloomers" /></a></li>
+                <li><a href="#pic5"><img src="double-click/pic5.jpg" alt="Green lizard" /></a></li>
+                <li><a href="#pic6"><img src="double-click/pic6.jpg" alt="Feeding the birds" /></a></li>
+                <li><a href="#slide3" class="next"><b>Next</b></a></li>
+            </ul>
         </div>
+        <div id="slide3">
+            <ul>
+                <li><a href="#slide2" class="previous"><b>Previous</b></a></li>
+                <li><a href="#pic3"><img src="double-click/pic3.jpg" alt="Bird on a post" /></a></li>
+                <li><a href="#pic4"><img src="double-click/pic4.jpg" alt="Early bloomers" /></a></li>
+                <li><a href="#pic5"><img src="double-click/pic5.jpg" alt="Green lizard" /></a></li>
+                <li><a href="#pic6"><img src="double-click/pic6.jpg" alt="Feeding the birds" /></a></li>
+                <li><a href="#pic7"><img src="double-click/pic7.jpg" alt="A group of butterflies" /></a></li>
+                <li><a href="#slide4" class="next"><b>Next</b></a></li>
+            </ul>
+        </div>
+        <div id="slide4">
+            <ul>
+                <li><a href="#slide3" class="previous"><b>Previous</b></a></li>
+                <li><a href="#pic4"><img src="double-click/pic4.jpg" alt="Early bloomers" /></a></li>
+                <li><a href="#pic5"><img src="double-click/pic5.jpg" alt="Green lizard" /></a></li>
+                <li><a href="#pic6"><img src="double-click/pic6.jpg" alt="Feeding the birds" /></a></li>
+                <li><a href="#pic7"><img src="double-click/pic7.jpg" alt="A group of butterflies" /></a></li>
+                <li><a href="#pic8"><img src="double-click/pic8.jpg" alt="Ladybirds" /></a></li>
+                <li><a href="#slide5" class="next"><b>Next</b></a></li>
+            </ul>
+        </div>
+        <div id="slide5">
+            <ul>
+                <li><a href="#slide4" class="previous"><b>Previous</b></a></li>
+                <li><a href="#pic5"><img src="double-click/pic5.jpg" alt="Green lizard" /></a></li>
+                <li><a href="#pic6"><img src="double-click/pic6.jpg" alt="Feeding the birds" /></a></li>
+                <li><a href="#pic7"><img src="double-click/pic7.jpg" alt="A group of butterflies" /></a></li>
+                <li><a href="#pic8"><img src="double-click/pic8.jpg" alt="Ladybirds" /></a></li>
+                <li><a href="#pic9"><img src="double-click/pic9.jpg" alt="Butterfly" /></a></li>
+                <li><a href="#slide6" class="next"><b>Next</b></a></li>
+            </ul>
+        </div>
+        <div id="slide6">
+            <ul>
+                <li><a href="#slide5" class="previous"><b>Previous</b></a></li>
+                <li><a href="#pic6"><img src="double-click/pic6.jpg" alt="Feeding the birds" /></a></li>
+                <li><a href="#pic7"><img src="double-click/pic7.jpg" alt="A group of butterflies" /></a></li>
+                <li><a href="#pic8"><img src="double-click/pic8.jpg" alt="Ladybirds" /></a></li>
+                <li><a href="#pic9"><img src="double-click/pic9.jpg" alt="Butterfly" /></a></li>
+                <li><a href="#pic10"><img src="double-click/pic10.jpg" alt="Trees in the mist" /></a></li>
+                <li><a href="#slide7" class="next"><b>Next</b></a></li>
+            </ul>
+        </div>
+        <div id="slide7">
+            <ul>
+                <li><a href="#slide6" class="previous"><b>Previous</b></a></li>
+                <li><a href="#pic7"><img src="double-click/pic7.jpg" alt="A group of butterflies" /></a></li>
+                <li><a href="#pic8"><img src="double-click/pic8.jpg" alt="Ladybirds" /></a></li>
+                <li><a href="#pic9"><img src="double-click/pic9.jpg" alt="Butterfly" /></a></li>
+                <li><a href="#pic10"><img src="double-click/pic10.jpg" alt="Trees in the mist" /></a></li>
+                <li><a href="#pic1"><img src="double-click/pic1.jpg" alt="Winter branches" /></a></li>
+                <li><a href="#slide8" class="next"><b>Next</b></a></li>
+            </ul>
+        </div>
+        <div id="slide8">
+            <ul>
+                <li><a href="#slide7" class="previous"><b>Previous</b></a></li>
+                <li><a href="#pic8"><img src="double-click/pic8.jpg" alt="Ladybirds" /></a></li>
+                <li><a href="#pic9"><img src="double-click/pic9.jpg" alt="Butterfly" /></a></li>
+                <li><a href="#pic10"><img src="double-click/pic10.jpg" alt="Trees in the mist" /></a></li>
+                <li><a href="#pic1"><img src="double-click/pic1.jpg" alt="Winter branches" /></a></li>
+                <li><a href="#pic2"><img src="double-click/pic2.jpg" alt="Wading birds" /></a></li>
+                <li><a href="#slide9" class="next"><b>Next</b></a></li>
+            </ul>
+        </div>
+        <div id="slide9">
+            <ul>
+                <li><a href="#slide8" class="previous"><b>Previous</b></a></li>
+                <li><a href="#pic9"><img src="double-click/pic9.jpg" alt="Butterfly" /></a></li>
+                <li><a href="#pic10"><img src="double-click/pic10.jpg" alt="Trees in the mist" /></a></li>
+                <li><a href="#pic1"><img src="double-click/pic1.jpg" alt="Winter branches" /></a></li>
+                <li><a href="#pic2"><img src="double-click/pic2.jpg" alt="Wading birds" /></a></li>
+                <li><a href="#pic3"><img src="double-click/pic3.jpg" alt="Bird on a post" /></a></li>
+                <li><a href="#slide10" class="next"><b>Next</b></a></li>
+            </ul>
+        </div>
+        <div id="slide10">
+            <ul>
+                <li><a href="#slide9" class="previous"><b>Previous</b></a></li>
+                <li><a href="#pic10"><img src="double-click/pic10.jpg" alt="Trees in the mist" /></a></li>
+                <li><a href="#pic1"><img src="double-click/pic1.jpg" alt="Winter branches" /></a></li>
+                <li><a href="#pic2"><img src="double-click/pic2.jpg" alt="Wading birds" /></a></li>
+                <li><a href="#pic3"><img src="double-click/pic3.jpg" alt="Bird on a post" /></a></li>
+                <li><a href="#pic4"><img src="double-click/pic4.jpg" alt="Early bloomers" /></a></li>
+                <li><a href="#slide1" class="next"><b>Next</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="fullsize">
+        <div id="pic1">
+            <img src="double-click/pic1.jpg" alt="Winter branches" />
+            <h3>Winter branches</h3>
+            <p>Followed by some descriptive text and maybe a <a href="http://www.cssplay.co.uk/">link</a>.</p>
+        </div>
+        <div id="pic2">
+            <img src="double-click/pic2.jpg" alt="Wading birds" />
+            <h3>Wading birds</h3>
+            <p>Another piece of descriptive text and again a <a href="http://www.cssplay.co.uk/">link</a>.</p>
+        </div>
+        <div id="pic3">
+            <img src="double-click/pic3.jpg" alt="Bird on a post" />
+            <h3>Bird on a post</h3>
+            <p>Yet more descriptive text and maybe a <a href="http://www.cssplay.co.uk/">link</a>.</p>
+        </div>
+        <div id="pic4">
+            <img src="double-click/pic4.jpg" alt="Early bloomers" />
+            <h3>Early bloomers</h3>
+            <p>And another line of descriptive text and maybe a <a href="http://www.cssplay.co.uk/">link</a>.</p>
+        </div>
+        <div id="pic5">
+            <img src="double-click/pic5.jpg" alt="Green lizard" />
+            <h3>Green lizard</h3>
+            <p>With descriptive text and maybe a <a href="http://www.cssplay.co.uk/">link</a>.</p>
+        </div>
+        <div id="pic6">
+            <img src="double-click/pic6.jpg" alt="Feeding the birds" />
+            <h3>Feeding the birds</h3>
+            <p>A description of the picture can go here with a <a href="http://www.cssplay.co.uk/">link</a>.</p>
+        </div>
+        <div id="pic7">
+            <img src="double-click/pic7.jpg" alt="A group of butterflies" />
+            <h3>A group of butterflies</h3>
+            <p>Descriptive text and maybe a <a href="http://www.cssplay.co.uk/">link</a>.</p>
+        </div>
+        <div id="pic8">
+            <img src="double-click/pic8.jpg" alt="Ladybirds" />
+            <h3>Ladybirds</h3>
+            <p>The text can be over as many lines as you want, but you may need to adjust the size of the containing div to make sure that it can all be seen. The <a href="http://www.cssplay.co.uk/">link</a> can be used if you want.</p>
+        </div>
+        <div id="pic9">
+            <img src="double-click/pic9.jpg" alt="Butterfly" />
+            <h3>Butterfly</h3>
+            <p>Followed by some descriptive text and maybe a <a href="http://www.cssplay.co.uk/">link</a>.</p>
+        </div>
+        <div id="pic10">
+            <img src="double-click/pic10.jpg" alt="Trees in the mist" />
+            <h3>Trees in the mist</h3>
+            <p>Another piece of descriptive text and maybe a <a href="http://www.cssplay.co.uk/">link</a>.</p>
+        </div>
+    </div>
+</div>
 
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+</body>
 </html>
