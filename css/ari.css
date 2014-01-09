@@ -31,7 +31,7 @@ body {
 }
 
 /* 640px is iPhone pixel width */
-@media all and (min-width:640px) {
+@media all and (min-width:641px) {
     #Title {
         font-family: 'Julius Sans One', sans-serif;
         font-size: 60pt;
@@ -48,7 +48,7 @@ body {
 }
 
 /* Original iPad width - we may not care about this... */
-@media all and (min-width:768px) {
+@media all and (min-width:769px) {
     #Title {
         font-family: 'Julius Sans One', sans-serif;
         font-size: 70pt;
